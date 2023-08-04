@@ -1,0 +1,983 @@
+###############################################################################
+#
+# IAR ELF Linker V8.40.1.212/W32 for ARM                  04/Aug/2023  16:12:06
+# Copyright 2007-2019 IAR Systems AB.
+#
+#    Output file  =
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Exe\SM500101.out
+#    Map file     =
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\List\SM500101.map
+#    Command line =
+#        -f C:\Users\Administrator\AppData\Local\Temp\EW8990.tmp
+#        (E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\AnyID_FRam.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\AnyID_SM5001_AD.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\AnyID_SM5001_AD_HL.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\AnyID_SM5001_Device.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\Anyid_SM5001_ELECT.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\Anyid_SM5001_ELECT_HL.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\AnyID_SM5001_FRam.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\AnyID_SM5001_FRam_HL.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\AnyID_SM5001_Gate.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\AnyID_SM5001_Gate_HL.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\AnyID_SM5001_IO.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\AnyID_SM5001_IO_HL.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\AnyID_SM5001_RTC.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\Anyid_SM5001_Sound.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\Anyid_SM5001_Sound_HL.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\AnyID_SM5001_SysCfg.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\AnyID_SM5001_SysTick_HL.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\AnyID_SM5001_Uart.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\AnyID_SM5001_Uart_HL.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\AnyID_SM5001_W232.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\AnyID_SM5001_W232_HL.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\Anyid_SM5001_Water.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\Anyid_SM5001_Water_HL.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\AnyID_SM5001_WDG_HL.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\AnyID_Stdlib.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\AnyID_Uart_Receive.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\base64.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\hmac_sha1.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\main.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\md5.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\misc.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\startup_stm32f10x_hd.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\stm32f10x_adc.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\stm32f10x_bkp.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\stm32f10x_dma.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\stm32f10x_exti.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\stm32f10x_flash.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\stm32f10x_gpio.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\stm32f10x_it.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\stm32f10x_iwdg.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\stm32f10x_pwr.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\stm32f10x_rcc.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\stm32f10x_rtc.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\stm32f10x_spi.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\stm32f10x_tim.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\stm32f10x_usart.o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj\system_stm32f10x.o
+#        --redirect _Printf=_PrintfFull --redirect _Scanf=_ScanfFull
+#        --no_out_extension -o
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\Exe\SM500101.out
+#        --map
+#        E:\AnyID\HFReader\software\SM500101\SM5001\Build\List\SM500101.map
+#        --config E:\AnyID\HFReader\software\SM500101\SM5001\GD32F303xC.icf
+#        --semihosting --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x800'4000 { ro section .intvec };
+"P1":  place in [from 0x800'4000 to 0x803'ffff] { ro };
+define block CSTACK with size = 5376, alignment = 8 { };
+define block HEAP with size = 2K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'bfff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+"A0":                                       0x130
+  .intvec            ro code   0x800'4000   0x130  startup_stm32f10x_hd.o [1]
+                             - 0x800'4130   0x130
+
+"P1", part 1 of 2:                           0xb0
+  .text              ro code   0x800'4130    0x3a  zero_init3.o [4]
+  .text              ro code   0x800'416a    0x1e  xencoding_8859_1.o [2]
+  .text              ro code   0x800'4188     0xa  xsprout.o [2]
+  Initializer bytes  const     0x800'4192    0x4e  <for P2-1>
+                             - 0x800'41e0    0xb0
+
+Absolute sections:                           0x32
+  .rodata            const     0x800'5000    0x32  AnyID_SM5001_Device.o [1]
+                             - 0x800'5032    0x32
+
+"P1", part 2 of 2:                         0xc6bc
+  .text              ro code   0x800'5034  0x3da8  AnyID_SM5001_Device.o [1]
+  .text              ro code   0x800'8ddc   0xf10  AnyID_SM5001_W232.o [1]
+  .text              ro code   0x800'9cec   0x206  Anyid_SM5001_ELECT.o [1]
+  .text              ro code   0x800'9ef2   0x236  AnyID_FRam.o [1]
+  .text              ro code   0x800'a128   0x2de  AnyID_Stdlib.o [1]
+  .text              ro code   0x800'a408    0x66  ABImemset.o [4]
+  .text              ro code   0x800'a470   0x13c  AnyID_SM5001_FRam.o [1]
+  .text              ro code   0x800'a5ac    0xa6  ABImemcpy.o [4]
+  .text              ro code   0x800'a654    0x68  memcmp.o [4]
+  .text              ro code   0x800'a6bc   0x644  AnyID_SM5001_Gate.o [1]
+  .text              ro code   0x800'ad00    0x36  strlen.o [4]
+  .rodata            const     0x800'ad36     0x2  xlocale_c.o [2]
+  .text              ro code   0x800'ad38    0x40  sprintf.o [2]
+  .text              ro code   0x800'ad78    0x2c  strstr.o [2]
+  .text              ro code   0x800'ada4   0x1a2  AnyID_SM5001_W232_HL.o [1]
+  .rodata            const     0x800'af46     0x2  xlocale_c.o [2]
+  .text              ro code   0x800'af48   0x2f8  Anyid_SM5001_ELECT_HL.o [1]
+  .text              ro code   0x800'b240   0x228  AnyID_SM5001_FRam_HL.o [1]
+  .text              ro code   0x800'b468   0x280  AnyID_SM5001_Gate_HL.o [1]
+  .text              ro code   0x800'b6e8   0x2de  stm32f10x_usart.o [1]
+  .rodata            const     0x800'b9c6     0x1  xlocale_c.o [2]
+  .text              ro code   0x800'b9c8  0x10c6  xprintffull.o [2]
+  .text              ro code   0x800'ca90    0x16  strchr.o [4]
+  .text              ro code   0x800'caa8   0x178  stm32f10x_gpio.o [1]
+  .text              ro code   0x800'cc20    0xb8  misc.o [1]
+  .text              ro code   0x800'ccd8   0x198  stm32f10x_dma.o [1]
+  .text              ro code   0x800'ce70   0x338  stm32f10x_rcc.o [1]
+  .text              ro code   0x800'd1a8    0x7c  xlocale_c.o [2]
+  .text              ro code   0x800'd224    0x40  xfail_s.o [2]
+  .text              ro code   0x800'd264    0x58  memchr.o [4]
+  .text              ro code   0x800'd2bc    0x70  frexp.o [3]
+  .text              ro code   0x800'd32c    0x2e  DblCmpLe.o [3]
+  .text              ro code   0x800'd35c    0x2e  DblCmpGe.o [3]
+  .text              ro code   0x800'd38c   0x13a  ldexp.o [3]
+  .text              ro code   0x800'd4c8    0x3a  DblToS32.o [3]
+  .text              ro code   0x800'd504    0x22  S32ToDbl.o [3]
+  .text              ro code   0x800'd528    0xe2  DblSub.o [3]
+  .text              ro code   0x800'd60c   0x246  DblDiv.o [3]
+  .text              ro code   0x800'd854    0x28  DblToU32.o [3]
+  .text              ro code   0x800'd87c    0x1a  U32ToDbl.o [3]
+  .text              ro code   0x800'd898   0x1a2  DblMul.o [3]
+  .text              ro code   0x800'da3a     0xa  xmbcurmax.o [2]
+  .text              ro code   0x800'da44   0x230  I64DivMod.o [4]
+  .text              ro code   0x800'dc74     0x6  abort.o [2]
+  .text              ro code   0x800'dc7c   0x16a  DblAdd.o [3]
+  .text              ro code   0x800'dde8     0x2  I64DivZer.o [4]
+  .text              ro code   0x800'ddec    0x14  exit.o [5]
+  .text              ro code   0x800'de00  0x1718  AnyID_SM5001_SysCfg.o [1]
+  .text              ro code   0x800'f518    0x2c  stm32f10x_flash.o [1]
+  .text              ro code   0x800'f544    0xc8  AnyID_SM5001_IO.o [1]
+  .text              ro code   0x800'f60c   0x200  Anyid_SM5001_Water.o [1]
+  .text              ro code   0x800'f80c   0x49e  Anyid_SM5001_Sound.o [1]
+  .text              ro code   0x800'fcac    0xa4  AnyID_SM5001_SysTick_HL.o [1]
+  .text              ro code   0x800'fd50   0x150  AnyID_SM5001_AD_HL.o [1]
+  .text              ro code   0x800'fea0   0x148  Anyid_SM5001_Sound_HL.o [1]
+  .text              ro code   0x800'ffe8    0x88  AnyID_SM5001_AD.o [1]
+  .text              ro code   0x801'0070    0xdc  AnyID_SM5001_IO_HL.o [1]
+  .text              ro code   0x801'014c   0x24c  Anyid_SM5001_Water_HL.o [1]
+  .text              ro code   0x801'0398   0x250  stm32f10x_adc.o [1]
+  .text              ro code   0x801'05e8   0x394  stm32f10x_it.o [1]
+  .text              ro code   0x801'097c    0x94  stm32f10x_rtc.o [1]
+  .text              ro code   0x801'0a10   0x110  system_stm32f10x.o [1]
+  .rodata            const     0x801'0b20   0x100  AnyID_Stdlib.o [1]
+  .rodata            const     0x801'0c20    0xdc  AnyID_SM5001_AD.o [1]
+  .text              ro code   0x801'0cfc    0x78  lz77_init_single.o [4]
+  .rodata            const     0x801'0d74    0x64  AnyID_SM5001_Device.o [1]
+  .rodata            const     0x801'0dd8    0x64  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'0e3c    0x50  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'0e8c    0x44  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'0ed0    0x3c  AnyID_SM5001_Device.o [1]
+  .rodata            const     0x801'0f0c    0x3c  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'0f48    0x38  AnyID_SM5001_Device.o [1]
+  .rodata            const     0x801'0f80    0x38  AnyID_SM5001_Device.o [1]
+  .rodata            const     0x801'0fb8    0x38  AnyID_SM5001_Device.o [1]
+  .rodata            const     0x801'0ff0    0x38  AnyID_SM5001_Device.o [1]
+  .rodata            const     0x801'1028    0x38  AnyID_SM5001_Device.o [1]
+  .rodata            const     0x801'1060    0x38  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'1098    0x38  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'10d0    0x38  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'1108    0x34  AnyID_SM5001_Device.o [1]
+  .text              ro code   0x801'113c    0x34  main.o [1]
+  .rodata            const     0x801'1170    0x30  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'11a0    0x30  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'11d0    0x2c  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'11fc    0x28  AnyID_SM5001_W232.o [1]
+  .text              ro code   0x801'1224    0x28  data_init.o [4]
+  .rodata            const     0x801'124c    0x24  AnyID_SM5001_W232.o [1]
+  .iar.init_table    const     0x801'1270    0x20  - Linker created -
+  .rodata            const     0x801'1290    0x20  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'12b0    0x20  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'12d0    0x20  AnyID_SM5001_W232.o [1]
+  .text              ro code   0x801'12f0    0x1e  cmain.o [4]
+  .text              ro code   0x801'130e     0x4  low_level_init.o [2]
+  .text              ro code   0x801'1312     0x4  exit.o [2]
+  .text              ro code   0x801'1318     0xa  cexit.o [4]
+  .rodata            const     0x801'1324    0x1c  AnyID_SM5001_Device.o [1]
+  .rodata            const     0x801'1340    0x1c  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'135c    0x1c  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'1378    0x1c  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'1394    0x1c  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'13b0    0x18  AnyID_SM5001_Device.o [1]
+  .rodata            const     0x801'13c8    0x18  AnyID_SM5001_Device.o [1]
+  .rodata            const     0x801'13e0    0x18  AnyID_SM5001_Device.o [1]
+  .rodata            const     0x801'13f8    0x18  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'1410    0x10  AnyID_SM5001_Device.o [1]
+  .rodata            const     0x801'1420    0x10  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'1430    0x10  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'1440    0x10  AnyID_Stdlib.o [1]
+  .text              ro code   0x801'1450    0x10  startup_stm32f10x_hd.o [1]
+  .rodata            const     0x801'1460     0xc  AnyID_SM5001_Device.o [1]
+  .rodata            const     0x801'146c     0xc  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'1478     0xc  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'1484     0xc  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'1490     0xc  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'149c     0xc  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'14a8     0xc  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'14b4     0xc  AnyID_SM5001_W232.o [1]
+  .text              ro code   0x801'14c0     0xc  cstartup_M.o [4]
+  .rodata            const     0x801'14cc     0x8  AnyID_SM5001_AD_HL.o [1]
+  .rodata            const     0x801'14d4     0x8  AnyID_SM5001_AD_HL.o [1]
+  .rodata            const     0x801'14dc     0x8  AnyID_SM5001_Device.o [1]
+  .rodata            const     0x801'14e4     0x8  AnyID_SM5001_Device.o [1]
+  .rodata            const     0x801'14ec     0x8  AnyID_SM5001_Device.o [1]
+  .rodata            const     0x801'14f4     0x8  AnyID_SM5001_Device.o [1]
+  .rodata            const     0x801'14fc     0x8  AnyID_SM5001_Device.o [1]
+  .rodata            const     0x801'1504     0x8  Anyid_SM5001_ELECT_HL.o [1]
+  .rodata            const     0x801'150c     0x8  Anyid_SM5001_ELECT_HL.o [1]
+  .rodata            const     0x801'1514     0x8  Anyid_SM5001_ELECT_HL.o [1]
+  .rodata            const     0x801'151c     0x8  AnyID_SM5001_FRam_HL.o [1]
+  .rodata            const     0x801'1524     0x8  AnyID_SM5001_FRam_HL.o [1]
+  .rodata            const     0x801'152c     0x8  AnyID_SM5001_Gate_HL.o [1]
+  .rodata            const     0x801'1534     0x8  AnyID_SM5001_Gate_HL.o [1]
+  .rodata            const     0x801'153c     0x8  AnyID_SM5001_Gate_HL.o [1]
+  .rodata            const     0x801'1544     0x8  AnyID_SM5001_IO_HL.o [1]
+  .rodata            const     0x801'154c     0x8  AnyID_SM5001_IO_HL.o [1]
+  .rodata            const     0x801'1554     0x8  AnyID_SM5001_IO_HL.o [1]
+  .rodata            const     0x801'155c     0x8  AnyID_SM5001_IO_HL.o [1]
+  .rodata            const     0x801'1564     0x8  AnyID_SM5001_IO_HL.o [1]
+  .rodata            const     0x801'156c     0x8  AnyID_SM5001_IO_HL.o [1]
+  .rodata            const     0x801'1574     0x8  AnyID_SM5001_IO_HL.o [1]
+  .rodata            const     0x801'157c     0x8  AnyID_SM5001_IO_HL.o [1]
+  .rodata            const     0x801'1584     0x8  AnyID_SM5001_IO_HL.o [1]
+  .rodata            const     0x801'158c     0x8  Anyid_SM5001_Sound_HL.o [1]
+  .rodata            const     0x801'1594     0x8  Anyid_SM5001_Sound_HL.o [1]
+  .rodata            const     0x801'159c     0x8  Anyid_SM5001_Sound_HL.o [1]
+  .rodata            const     0x801'15a4     0x8  AnyID_SM5001_SysCfg.o [1]
+  .rodata            const     0x801'15ac     0x8  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'15b4     0x8  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'15bc     0x8  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'15c4     0x8  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'15cc     0x8  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'15d4     0x8  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'15dc     0x8  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'15e4     0x8  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'15ec     0x8  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'15f4     0x8  AnyID_SM5001_W232.o [1]
+  .rodata            const     0x801'15fc     0x8  AnyID_SM5001_W232_HL.o [1]
+  .rodata            const     0x801'1604     0x8  AnyID_SM5001_W232_HL.o [1]
+  .rodata            const     0x801'160c     0x8  AnyID_SM5001_W232_HL.o [1]
+  .rodata            const     0x801'1614     0x8  AnyID_SM5001_W232_HL.o [1]
+  .rodata            const     0x801'161c     0x8  Anyid_SM5001_Water_HL.o [1]
+  .rodata            const     0x801'1624     0x8  Anyid_SM5001_Water_HL.o [1]
+  .rodata            const     0x801'162c     0x8  Anyid_SM5001_Water_HL.o [1]
+  .text              ro code   0x801'1634     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'1638     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'163c     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'1640     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'1644     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'1648     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'164c     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'1650     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'1654     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'1658     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'165c     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'1660     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'1664     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'1668     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'166c     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'1670     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'1674     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'1678     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'167c     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'1680     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'1684     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'1688     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'168c     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'1690     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'1694     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'1698     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'169c     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'16a0     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'16a4     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'16a8     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'16ac     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'16b0     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'16b4     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'16b8     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'16bc     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'16c0     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'16c4     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'16c8     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'16cc     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'16d0     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'16d4     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'16d8     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'16dc     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'16e0     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'16e4     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'16e8     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x801'16ec     0x4  startup_stm32f10x_hd.o [1]
+  .rodata            const     0x801'16f0     0x0  zero_init3.o [4]
+  .rodata            const     0x801'16f0     0x0  lz77_init_single.o [4]
+                             - 0x801'16f0  0xc6bc
+
+"P2", part 1 of 3:                           0xae
+  P2-1                        0x2000'0000    0xae  <Init block>
+    .data            inited   0x2000'0000     0xc  AnyID_SM5001_RTC.o [1]
+    .data            inited   0x2000'000c     0x4  AnyID_SM5001_SysCfg.o [1]
+    .data            inited   0x2000'0010     0x8  Anyid_SM5001_Water.o [1]
+    .data            inited   0x2000'0018    0x10  stm32f10x_rcc.o [1]
+    .data            inited   0x2000'0028     0x4  stm32f10x_rcc.o [1]
+    .data            inited   0x2000'002c    0x38  xlocale_c.o [2]
+    .data            inited   0x2000'0064    0x48  xlocale_c.o [2]
+    .data            inited   0x2000'00ac     0x1  AnyID_SM5001_Device.o [1]
+    .data            inited   0x2000'00ad     0x1  AnyID_SM5001_Device.o [1]
+                            - 0x2000'00ae    0xae
+
+"P2", part 2 of 3:                         0x5e68
+  .bss               zero     0x2000'00b0  0x1430  AnyID_SM5001_Device.o [1]
+  .bss               zero     0x2000'14e0   0x8a8  AnyID_SM5001_Device.o [1]
+  .bss               zero     0x2000'1d88   0x818  AnyID_SM5001_W232.o [1]
+  .bss               zero     0x2000'25a0   0x818  AnyID_Uart_Receive.o [1]
+  .bss               zero     0x2000'2db8   0x800  AnyID_SM5001_Device.o [1]
+  .bss               zero     0x2000'35b8   0x800  AnyID_SM5001_Device.o [1]
+  .bss               zero     0x2000'3db8   0x780  AnyID_SM5001_Gate.o [1]
+  .bss               zero     0x2000'4538   0x38c  AnyID_SM5001_W232.o [1]
+  .bss               zero     0x2000'48c4   0x2f4  AnyID_SM5001_Gate.o [1]
+  .bss               zero     0x2000'4bb8   0x234  Anyid_SM5001_ELECT.o [1]
+  .bss               zero     0x2000'4dec   0x200  AnyID_SM5001_Device.o [1]
+  .bss               zero     0x2000'4fec   0x200  AnyID_SM5001_Device.o [1]
+  .bss               zero     0x2000'51ec   0x200  AnyID_SM5001_Device.o [1]
+  .bss               zero     0x2000'53ec   0x200  AnyID_SM5001_Device.o [1]
+  .bss               zero     0x2000'55ec   0x200  AnyID_SM5001_Device.o [1]
+  .bss               zero     0x2000'57ec   0x144  Anyid_SM5001_Sound.o [1]
+  .bss               zero     0x2000'5930   0x134  AnyID_SM5001_Device.o [1]
+  .bss               zero     0x2000'5a64   0x124  AnyID_SM5001_W232.o [1]
+  .bss               zero     0x2000'5b88   0x10c  Anyid_SM5001_Water.o [1]
+  .bss               zero     0x2000'5c94    0xb4  AnyID_SM5001_FRam.o [1]
+  .bss               zero     0x2000'5d48    0x64  AnyID_SM5001_Device.o [1]
+  .bss               zero     0x2000'5dac    0x60  AnyID_SM5001_W232.o [1]
+  .bss               zero     0x2000'5e0c    0x3c  Anyid_SM5001_Water.o [1]
+  .bss               zero     0x2000'5e48    0x38  AnyID_SM5001_FRam.o [1]
+  .bss               zero     0x2000'5e80    0x24  AnyID_SM5001_Gate.o [1]
+  .bss               zero     0x2000'5ea4    0x1c  AnyID_SM5001_IO.o [1]
+  .bss               zero     0x2000'5ec0    0x14  AnyID_SM5001_W232.o [1]
+  .bss               zero     0x2000'5ed4    0x14  AnyID_SM5001_W232.o [1]
+  .bss               zero     0x2000'5ee8     0x8  AnyID_SM5001_Device.o [1]
+  .bss               zero     0x2000'5ef0     0x4  AnyID_SM5001_AD_HL.o [1]
+  .bss               zero     0x2000'5ef4     0x4  AnyID_SM5001_Device.o [1]
+  .bss               zero     0x2000'5ef8     0x4  AnyID_SM5001_SysCfg.o [1]
+  .bss               zero     0x2000'5efc     0x4  AnyID_SM5001_SysTick_HL.o [1]
+  .bss               zero     0x2000'5f00     0x4  AnyID_SM5001_SysTick_HL.o [1]
+  .bss               zero     0x2000'5f04     0x4  xfail_s.o [2]
+  .bss               zero     0x2000'5f08     0x2  stm32f10x_it.o [1]
+  .bss               zero     0x2000'5f0a     0x2  stm32f10x_it.o [1]
+  .bss               zero     0x2000'5f0c     0x2  stm32f10x_it.o [1]
+  .bss               zero     0x2000'5f0e     0x2  stm32f10x_it.o [1]
+  .bss               zero     0x2000'5f10     0x2  stm32f10x_it.o [1]
+  .bss               zero     0x2000'5f12     0x2  stm32f10x_it.o [1]
+  .bss               zero     0x2000'5f14     0x1  AnyID_SM5001_SysCfg.o [1]
+  .bss               zero     0x2000'5f15     0x1  AnyID_SM5001_SysCfg.o [1]
+  .bss               zero     0x2000'5f16     0x1  AnyID_SM5001_SysCfg.o [1]
+  .bss               zero     0x2000'5f17     0x1  stm32f10x_it.o [1]
+                            - 0x2000'5f18  0x5e68
+
+"P2", part 3 of 3:                         0x1500
+  CSTACK                      0x2000'5f18  0x1500  <Block>
+    CSTACK           uninit   0x2000'5f18  0x1500  <Block tail>
+                            - 0x2000'7418  0x1500
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+   0x800'41e0   0x800'4fff     0xe20
+   0x800'5032   0x800'5033       0x2
+   0x801'16f0   0x803'ffff  0x2'e910
+  0x2000'00ae  0x2000'00af       0x2
+  0x2000'7418  0x2000'bfff    0x4be8
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x5e68:
+          0x2000'00b0  0x5e68
+
+Copy/lz77 (__iar_lz77_init_single3)
+    1 source range, total size 0x4e (44% of destination):
+           0x800'4192    0x4e
+    1 destination range, total size 0xae:
+          0x2000'0000    0xae
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                     ro code  ro data  rw data  ro data
+                                                           (abs)
+    ------                     -------  -------  -------  -------
+command line/config:
+    -------------------------------------------------------------
+    Total:
+
+E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj: [1]
+    AnyID_FRam.o                   566
+    AnyID_SM5001_AD.o              136      220
+    AnyID_SM5001_AD_HL.o           336       16        4
+    AnyID_SM5001_Device.o       15'784      661   14'462       50
+    AnyID_SM5001_FRam.o            316               236
+    AnyID_SM5001_FRam_HL.o         552       16
+    AnyID_SM5001_Gate.o          1'604             2'712
+    AnyID_SM5001_Gate_HL.o         640       24
+    AnyID_SM5001_IO.o              200                28
+    AnyID_SM5001_IO_HL.o           220       72
+    AnyID_SM5001_RTC.o                        5       12
+    AnyID_SM5001_SysCfg.o        5'912       10       11
+    AnyID_SM5001_SysTick_HL.o      164                 8
+    AnyID_SM5001_W232.o          3'856    1'120    3'408
+    AnyID_SM5001_W232_HL.o         418       32
+    AnyID_Stdlib.o                 734      272
+    AnyID_Uart_Receive.o                           2'072
+    Anyid_SM5001_ELECT.o           518               564
+    Anyid_SM5001_ELECT_HL.o        760       24
+    Anyid_SM5001_Sound.o         1'182               324
+    Anyid_SM5001_Sound_HL.o        328       24
+    Anyid_SM5001_Water.o           512        3      336
+    Anyid_SM5001_Water_HL.o        588       24
+    main.o                          52
+    misc.o                         184
+    startup_stm32f10x_hd.o         508
+    stm32f10x_adc.o                592
+    stm32f10x_dma.o                408
+    stm32f10x_flash.o               44
+    stm32f10x_gpio.o               376
+    stm32f10x_it.o                 916                13
+    stm32f10x_rcc.o                824        9       20
+    stm32f10x_rtc.o                148
+    stm32f10x_usart.o              734
+    system_stm32f10x.o             272
+    -------------------------------------------------------------
+    Total:                      40'384    2'532   24'210       50
+
+dl7M_tlf.a: [2]
+    abort.o                          6
+    exit.o                           4
+    low_level_init.o                 4
+    sprintf.o                       64
+    strstr.o                        44
+    xencoding_8859_1.o              30
+    xfail_s.o                       64                 4
+    xlocale_c.o                    124       63      128
+    xmbcurmax.o                     10
+    xprintffull.o                4'294
+    xsprout.o                       10
+    -------------------------------------------------------------
+    Total:                       4'654       63      132
+
+m7M_tl.a: [3]
+    DblAdd.o                       362
+    DblCmpGe.o                      46
+    DblCmpLe.o                      46
+    DblDiv.o                       582
+    DblMul.o                       418
+    DblSub.o                       226
+    DblToS32.o                      58
+    DblToU32.o                      40
+    S32ToDbl.o                      34
+    U32ToDbl.o                      26
+    frexp.o                        112
+    ldexp.o                        314
+    -------------------------------------------------------------
+    Total:                       2'264
+
+rt7M_tl.a: [4]
+    ABImemcpy.o                    166
+    ABImemset.o                    102
+    I64DivMod.o                    560
+    I64DivZer.o                      2
+    cexit.o                         10
+    cmain.o                         30
+    cstartup_M.o                    12
+    data_init.o                     40
+    lz77_init_single.o             120
+    memchr.o                        88
+    memcmp.o                       104
+    strchr.o                        22
+    strlen.o                        54
+    zero_init3.o                    58
+    -------------------------------------------------------------
+    Total:                       1'368
+
+shb_l.a: [5]
+    exit.o                          20
+    -------------------------------------------------------------
+    Total:                          20
+
+    Gaps                            37        2
+    Linker created                           32    5'376
+-----------------------------------------------------------------
+    Grand Total:                48'727    2'629   29'718       50
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address    Size  Type      Object
+-----                       -------    ----  ----      ------
+.iar.init_table$$Base    0x801'1270           --   Gb  - Linker created -
+.iar.init_table$$Limit   0x801'1290           --   Gb  - Linker created -
+?main                    0x801'12f1          Code  Gb  cmain.o [4]
+ADC1_2_IRQHandler        0x801'0837     0x2  Code  Gb  stm32f10x_it.o [1]
+ADCPrescTable           0x2000'0028     0x4  Data  Lc  stm32f10x_rcc.o [1]
+ADC_Cmd                  0x801'0443    0x1c  Code  Gb  stm32f10x_adc.o [1]
+ADC_DMACmd               0x801'045f    0x1c  Code  Gb  stm32f10x_adc.o [1]
+ADC_DeInit               0x801'0399    0x5e  Code  Gb  stm32f10x_adc.o [1]
+ADC_GetCalibrationStatus
+                         0x801'04a3    0x14  Code  Gb  stm32f10x_adc.o [1]
+ADC_GetResetCalibrationStatus
+                         0x801'0485    0x14  Code  Gb  stm32f10x_adc.o [1]
+ADC_Init                 0x801'03f7    0x4c  Code  Gb  stm32f10x_adc.o [1]
+ADC_RegularChannelConfig
+                         0x801'04b7   0x11c  Code  Gb  stm32f10x_adc.o [1]
+ADC_ResetCalibration     0x801'047b     0xa  Code  Gb  stm32f10x_adc.o [1]
+ADC_StartCalibration     0x801'0499     0xa  Code  Gb  stm32f10x_adc.o [1]
+AD_DmaInit               0x800'fe27    0x5e  Code  Gb  AnyID_SM5001_AD_HL.o [1]
+AD_GetTmpr               0x801'0037    0x34  Code  Gb  AnyID_SM5001_AD.o [1]
+AD_Init                  0x800'fd8d    0x9a  Code  Gb  AnyID_SM5001_AD_HL.o [1]
+AD_InitInterface         0x800'fd51    0x3c  Code  Gb  AnyID_SM5001_AD_HL.o [1]
+AD_TEMP1_COM             0x801'14cc     0x8  Data  Gb  AnyID_SM5001_AD_HL.o [1]
+AD_TEMP2_COM             0x801'14d4     0x8  Data  Gb  AnyID_SM5001_AD_HL.o [1]
+APBAHBPrescTable        0x2000'0018    0x10  Data  Lc  stm32f10x_rcc.o [1]
+BusFault_Handler         0x801'05ef     0x2  Code  Gb  stm32f10x_it.o [1]
+CSTACK$$Base            0x2000'5f18           --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'7418           --   Gb  - Linker created -
+CacheMore                0x800'd1ad    0x28  Code  Lc  xlocale_c.o [2]
+DEVICE_VERSION           0x800'5000    0x32  Data  Gb  AnyID_SM5001_Device.o [1]
+DMA1_Channel2_IRQHandler
+                         0x801'07a1    0x3a  Code  Gb  stm32f10x_it.o [1]
+DMA1_Channel3_IRQHandler
+                         0x801'077b    0x26  Code  Gb  stm32f10x_it.o [1]
+DMA1_Channel6_IRQHandler
+                         0x801'06ff    0x26  Code  Gb  stm32f10x_it.o [1]
+DMA1_Channel7_IRQHandler
+                         0x801'0725    0x1a  Code  Gb  stm32f10x_it.o [1]
+DMA2_Channel3_IRQHandler
+                         0x801'0839    0x26  Code  Gb  stm32f10x_it.o [1]
+DMA2_Channel4_5_IRQHandler
+                         0x801'085f    0x38  Code  Gb  stm32f10x_it.o [1]
+DMA_Cmd                  0x800'ce05    0x1c  Code  Gb  stm32f10x_dma.o [1]
+DMA_DeInit               0x800'ccd9    0xf0  Code  Gb  stm32f10x_dma.o [1]
+DMA_ITConfig             0x800'ce21    0x18  Code  Gb  stm32f10x_dma.o [1]
+DMA_Init                 0x800'cdc9    0x3c  Code  Gb  stm32f10x_dma.o [1]
+DebugMon_Handler         0x801'05f5     0x2  Code  Gb  stm32f10x_it.o [1]
+Device_BrwRsp            0x800'8641    0x94  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_CheckRsp          0x800'803f   0x162  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_ChkSersor         0x800'8a85    0x5e  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_CommunCheckRsp    0x800'8371   0x1ce  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_CommunStep        0x800'8555    0x46  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_CommunTxCmd       0x800'81a1   0x104  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_CtrBatVolce       0x800'7d19   0x326  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_FormatMainInfo    0x800'8b11   0x246  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_GateBatTwice      0x800'6955    0x36  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_GateProceRspFrame
+                         0x800'626d   0x6e8  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_GateResponse      0x800'56b3    0x90  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_GateRsvSlvInfo    0x800'6145   0x11e  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_GateStateInit     0x800'8987    0x9e  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_GateStateRsp      0x800'8779   0x20e  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_HeartFormat       0x800'7925   0x32e  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_InfoChgRsp        0x800'86d5    0x94  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_Init              0x800'5035    0x7c  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_IoCtr             0x800'7c59    0xb0  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_IoCtr::fireFlag  0x2000'00ad     0x1  Data  Lc  AnyID_SM5001_Device.o [1]
+Device_ParmenterChkCode
+                         0x800'5283    0x3c  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_PostRsp           0x800'82a9    0xb2  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_ReadDeviceParamenter
+                         0x800'50c3   0x1c0  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_ReadMqttKey       0x800'52bf    0xfe  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_ResponseBat       0x800'5605    0xae  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_ResponseBrBat     0x800'559b    0x6a  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_ResponseCfg       0x800'5743   0x224  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_ResponseFrame     0x800'5433    0xfe  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_ResponseGateFrame
+                         0x800'5985   0x7c0  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_ResponseRtBat     0x800'5531    0x6a  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_RtuRsp            0x800'859b    0x92  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_ServerProcessRxInfo
+                         0x800'7759   0x12a  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_SetCfg            0x800'7587   0x1c4  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_UpHeartData       0x800'788d    0x6a  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_VoiceCtr          0x800'8a29    0x58  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_WaterProceRspFrame
+                         0x800'698b    0xd2  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_WriteDeviceParamenter
+                         0x800'53bd    0x3e  Code  Gb  AnyID_SM5001_Device.o [1]
+Device_WriteMqttKey      0x800'53fb    0x38  Code  Gb  AnyID_SM5001_Device.o [1]
+ELECT_PORT_CTRL          0x801'1514     0x8  Data  Gb  Anyid_SM5001_ELECT_HL.o [1]
+ELECT_PORT_RX            0x801'150c     0x8  Data  Gb  Anyid_SM5001_ELECT_HL.o [1]
+ELECT_PORT_TX            0x801'1504     0x8  Data  Gb  Anyid_SM5001_ELECT_HL.o [1]
+Elect_CheckFrame         0x800'9e65    0x44  Code  Gb  Anyid_SM5001_ELECT.o [1]
+Elect_ConfigInt          0x800'b029    0x2e  Code  Gb  Anyid_SM5001_ELECT_HL.o [1]
+Elect_FormatFrame        0x800'9d3b    0x8c  Code  Gb  Anyid_SM5001_ELECT.o [1]
+Elect_GetCrc16           0x800'9dc7    0x56  Code  Gb  Anyid_SM5001_ELECT.o [1]
+Elect_Init               0x800'9ced    0x4e  Code  Gb  Anyid_SM5001_ELECT.o [1]
+Elect_InitInterface      0x800'af49    0xe0  Code  Gb  Anyid_SM5001_ELECT_HL.o [1]
+Elect_InitRxDma          0x800'b0e7    0x96  Code  Gb  Anyid_SM5001_ELECT_HL.o [1]
+Elect_InitTxDma          0x800'b057    0x90  Code  Gb  Anyid_SM5001_ELECT_HL.o [1]
+Elect_Stop               0x800'b17d    0x5c  Code  Gb  Anyid_SM5001_ELECT_HL.o [1]
+Elect_TransmitCmd        0x800'9e1d    0x36  Code  Gb  Anyid_SM5001_ELECT.o [1]
+Elect_WriteBuffer        0x800'b1eb    0x34  Code  Gb  Anyid_SM5001_ELECT_HL.o [1]
+Elect_WriteByte          0x800'b1d9    0x12  Code  Gb  Anyid_SM5001_ELECT_HL.o [1]
+FLASH_PrefetchBufferCmd
+                         0x800'f52b    0x14  Code  Gb  stm32f10x_flash.o [1]
+FLASH_SetLatency         0x800'f519    0x12  Code  Gb  stm32f10x_flash.o [1]
+FRAM_SCL_PORT            0x801'1524     0x8  Data  Gb  AnyID_SM5001_FRam_HL.o [1]
+FRAM_SDA_PORT            0x801'151c     0x8  Data  Gb  AnyID_SM5001_FRam_HL.o [1]
+FRam_Delayms             0x800'b28b    0x12  Code  Gb  AnyID_SM5001_FRam_HL.o [1]
+FRam_I2CAck              0x800'b325    0x30  Code  Gb  AnyID_SM5001_FRam_HL.o [1]
+FRam_I2CDelay            0x800'b27d     0xe  Code  Gb  AnyID_SM5001_FRam_HL.o [1]
+FRam_I2CNoAck            0x800'b355    0x30  Code  Gb  AnyID_SM5001_FRam_HL.o [1]
+FRam_I2CReceiveByte      0x800'b411    0x4e  Code  Gb  AnyID_SM5001_FRam_HL.o [1]
+FRam_I2CSendByte         0x800'b3c7    0x4a  Code  Gb  AnyID_SM5001_FRam_HL.o [1]
+FRam_I2CStart            0x800'b29d    0x58  Code  Gb  AnyID_SM5001_FRam_HL.o [1]
+FRam_I2CStop             0x800'b2f5    0x30  Code  Gb  AnyID_SM5001_FRam_HL.o [1]
+FRam_I2CWaitAck          0x800'b385    0x42  Code  Gb  AnyID_SM5001_FRam_HL.o [1]
+FRam_InitInterface       0x800'b241    0x3c  Code  Gb  AnyID_SM5001_FRam_HL.o [1]
+FRam_ReadBuffer          0x800'9ef3    0xe2  Code  Gb  AnyID_FRam.o [1]
+FRam_WriteBuffer         0x800'a081    0xa8  Code  Gb  AnyID_FRam.o [1]
+FRam_WritePage           0x800'9fd5    0xac  Code  Gb  AnyID_FRam.o [1]
+Float32                  0x800'9ea9    0x4a  Code  Gb  Anyid_SM5001_ELECT.o [1]
+Fram_ReadBootParamenter
+                         0x800'a471    0xfa  Code  Gb  AnyID_SM5001_FRam.o [1]
+Fram_WriteBootParamenter
+                         0x800'a56b    0x3e  Code  Gb  AnyID_SM5001_FRam.o [1]
+GATE_PORT_CTRL           0x801'153c     0x8  Data  Gb  AnyID_SM5001_Gate_HL.o [1]
+GATE_PORT_RX             0x801'1534     0x8  Data  Gb  AnyID_SM5001_Gate_HL.o [1]
+GATE_PORT_TX             0x801'152c     0x8  Data  Gb  AnyID_SM5001_Gate_HL.o [1]
+GPIO_Init                0x800'caa9    0xea  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_PinRemapConfig      0x800'cb93    0x84  Code  Gb  stm32f10x_gpio.o [1]
+Gate_CheckRspFrame       0x800'abf9    0xe4  Code  Gb  AnyID_SM5001_Gate.o [1]
+Gate_ConfigInt           0x800'b537    0x2e  Code  Gb  AnyID_SM5001_Gate_HL.o [1]
+Gate_FormatCmd           0x800'a9ff   0x102  Code  Gb  AnyID_SM5001_Gate.o [1]
+Gate_GetNextOp           0x800'a7dd   0x222  Code  Gb  AnyID_SM5001_Gate.o [1]
+Gate_Init                0x800'a6bd    0xce  Code  Gb  AnyID_SM5001_Gate.o [1]
+Gate_InitInterface       0x800'b469    0xce  Code  Gb  AnyID_SM5001_Gate_HL.o [1]
+Gate_InitRxDma           0x800'b609    0x94  Code  Gb  AnyID_SM5001_Gate_HL.o [1]
+Gate_InitTxDma           0x800'b565    0xa4  Code  Gb  AnyID_SM5001_Gate_HL.o [1]
+Gate_Stop                0x800'a78b    0x52  Code  Gb  AnyID_SM5001_Gate.o [1]
+Gate_TxFrame             0x800'ab01    0xf8  Code  Gb  AnyID_SM5001_Gate.o [1]
+Gate_UartCheckErr        0x800'b69d    0x24  Code  Gb  AnyID_SM5001_Gate_HL.o [1]
+HardFault_Handler        0x801'05eb     0x2  Code  Gb  stm32f10x_it.o [1]
+IO_FAN_CTL               0x801'157c     0x8  Data  Gb  AnyID_SM5001_IO_HL.o [1]
+IO_Init                  0x800'f545     0xe  Code  Gb  AnyID_SM5001_IO.o [1]
+IO_InitInterface         0x801'0071    0xdc  Code  Gb  AnyID_SM5001_IO_HL.o [1]
+IO_LED_CTL               0x801'154c     0x8  Data  Gb  AnyID_SM5001_IO_HL.o [1]
+IO_LIMIT_INPUT           0x801'1564     0x8  Data  Gb  AnyID_SM5001_IO_HL.o [1]
+IO_MOTOR_CTL             0x801'1544     0x8  Data  Gb  AnyID_SM5001_IO_HL.o [1]
+IO_PWR_ERR_INPUT         0x801'1574     0x8  Data  Gb  AnyID_SM5001_IO_HL.o [1]
+IO_PWR_INPUT             0x801'156c     0x8  Data  Gb  AnyID_SM5001_IO_HL.o [1]
+IO_REALY_CTL             0x801'1584     0x8  Data  Gb  AnyID_SM5001_IO_HL.o [1]
+IO_SMOKE_INPUT           0x801'1554     0x8  Data  Gb  AnyID_SM5001_IO_HL.o [1]
+IO_Sersor_Chk            0x800'f553    0xa2  Code  Gb  AnyID_SM5001_IO.o [1]
+IO_WATER_INPUT           0x801'155c     0x8  Data  Gb  AnyID_SM5001_IO_HL.o [1]
+MemManage_Handler        0x801'05ed     0x2  Code  Gb  stm32f10x_it.o [1]
+NMI_Handler              0x801'05e9     0x2  Code  Gb  stm32f10x_it.o [1]
+NVIC_Init                0x800'cc2b    0x66  Code  Gb  misc.o [1]
+NVIC_PriorityGroupConfig
+                         0x800'cc21     0xa  Code  Gb  misc.o [1]
+NVIC_SetVectorTable      0x800'cc91     0xc  Code  Gb  misc.o [1]
+PendSV_Handler           0x801'05f7     0x2  Code  Gb  stm32f10x_it.o [1]
+RCC_ADCCLKConfig         0x800'cf9d    0x10  Code  Gb  stm32f10x_rcc.o [1]
+RCC_AHBPeriphClockCmd    0x800'd085    0x1c  Code  Gb  stm32f10x_rcc.o [1]
+RCC_APB1PeriphClockCmd   0x800'd0bd    0x1c  Code  Gb  stm32f10x_rcc.o [1]
+RCC_APB1PeriphResetCmd   0x800'd0f5    0x1c  Code  Gb  stm32f10x_rcc.o [1]
+RCC_APB2PeriphClockCmd   0x800'd0a1    0x1c  Code  Gb  stm32f10x_rcc.o [1]
+RCC_APB2PeriphResetCmd   0x800'd0d9    0x1c  Code  Gb  stm32f10x_rcc.o [1]
+RCC_DeInit               0x800'ce71    0x40  Code  Gb  stm32f10x_rcc.o [1]
+RCC_GetClocksFreq        0x800'cfad    0xd8  Code  Gb  stm32f10x_rcc.o [1]
+RCC_GetFlagStatus        0x800'd111    0x46  Code  Gb  stm32f10x_rcc.o [1]
+RCC_GetSYSCLKSource      0x800'cf5b     0xa  Code  Gb  stm32f10x_rcc.o [1]
+RCC_HCLKConfig           0x800'cf65    0x10  Code  Gb  stm32f10x_rcc.o [1]
+RCC_HSEConfig            0x800'ceb1    0x3a  Code  Gb  stm32f10x_rcc.o [1]
+RCC_PCLK1Config          0x800'cf75    0x10  Code  Gb  stm32f10x_rcc.o [1]
+RCC_PCLK2Config          0x800'cf85    0x12  Code  Gb  stm32f10x_rcc.o [1]
+RCC_PLLCmd               0x800'cf41     0xa  Code  Gb  stm32f10x_rcc.o [1]
+RCC_PLLConfig            0x800'cf29    0x18  Code  Gb  stm32f10x_rcc.o [1]
+RCC_SYSCLKConfig         0x800'cf4b    0x10  Code  Gb  stm32f10x_rcc.o [1]
+RCC_USBCLKConfig         0x800'cf97     0x6  Code  Gb  stm32f10x_rcc.o [1]
+RCC_WaitForHSEStartUp    0x800'ceeb    0x3e  Code  Gb  stm32f10x_rcc.o [1]
+RTC_ClearFlag            0x801'09cf     0xa  Code  Gb  stm32f10x_rtc.o [1]
+RTC_EnterConfigMode      0x801'097d     0xc  Code  Gb  stm32f10x_rtc.o [1]
+RTC_ExitConfigMode       0x801'0989     0xe  Code  Gb  stm32f10x_rtc.o [1]
+RTC_GetITStatus          0x801'09d9    0x26  Code  Gb  stm32f10x_rtc.o [1]
+RTC_IRQHandler           0x801'0699    0x2a  Code  Gb  stm32f10x_it.o [1]
+RTC_SetCounter           0x801'0997    0x1a  Code  Gb  stm32f10x_rtc.o [1]
+RTC_WaitForLastTask      0x801'09b1     0xa  Code  Gb  stm32f10x_rtc.o [1]
+RTC_WaitForSynchro       0x801'09bb    0x14  Code  Gb  stm32f10x_rtc.o [1]
+Reader_Delayms           0x800'50b1    0x12  Code  Gb  AnyID_SM5001_Device.o [1]
+Reader_ProcessUartFrame
+                         0x800'6a85   0xb02  Code  Gb  AnyID_SM5001_Device.o [1]
+Region$$Table$$Base      0x801'1270           --   Gb  - Linker created -
+Region$$Table$$Limit     0x801'1290           --   Gb  - Linker created -
+SOUND_PORT_CTL           0x801'159c     0x8  Data  Gb  Anyid_SM5001_Sound_HL.o [1]
+SOUND_PORT_RX            0x801'1594     0x8  Data  Gb  Anyid_SM5001_Sound_HL.o [1]
+SOUND_PORT_TX            0x801'158c     0x8  Data  Gb  Anyid_SM5001_Sound_HL.o [1]
+STick_InitSysTick        0x800'fd09    0x26  Code  Gb  AnyID_SM5001_SysTick_HL.o [1]
+SVC_Handler              0x801'05f3     0x2  Code  Gb  stm32f10x_it.o [1]
+SYS_RUN_LED              0x801'15a4     0x8  Data  Gb  AnyID_SM5001_SysCfg.o [1]
+SetSysClock              0x801'0a4d     0x8  Code  Lc  system_stm32f10x.o [1]
+SetSysClockTo72          0x801'0a55    0xb0  Code  Lc  system_stm32f10x.o [1]
+Sound_ConfigInt          0x800'ff49    0x2e  Code  Gb  Anyid_SM5001_Sound_HL.o [1]
+Sound_ConnectStep        0x800'fc69    0x42  Code  Gb  Anyid_SM5001_Sound.o [1]
+Sound_CtrTxCmd           0x800'f9f7   0x266  Code  Gb  Anyid_SM5001_Sound.o [1]
+Sound_EnableInt          0x800'ff77    0x30  Code  Gb  Anyid_SM5001_Sound_HL.o [1]
+Sound_FormaFrame_ApoVoice
+                         0x800'f8b5    0x84  Code  Gb  Anyid_SM5001_Sound.o [1]
+Sound_Init               0x800'f80d    0x20  Code  Gb  Anyid_SM5001_Sound.o [1]
+Sound_InitInterface      0x800'fea1    0xa8  Code  Gb  Anyid_SM5001_Sound_HL.o [1]
+Sound_ReceiveFrame       0x800'f82d    0x88  Code  Gb  Anyid_SM5001_Sound.o [1]
+Sound_Sum                0x800'f939    0x44  Code  Gb  Anyid_SM5001_Sound.o [1]
+Sound_TransmitCmd        0x800'f9c7    0x30  Code  Gb  Anyid_SM5001_Sound.o [1]
+Sound_WriteBuffer        0x800'ffa7    0x2c  Code  Gb  Anyid_SM5001_Sound_HL.o [1]
+Sounde_Chk               0x800'f97d    0x4a  Code  Gb  Anyid_SM5001_Sound.o [1]
+SysTick_CLKSourceConfig
+                         0x800'cc9d    0x1c  Code  Gb  misc.o [1]
+SysTick_Config           0x800'fcd9    0x30  Code  Lc  AnyID_SM5001_SysTick_HL.o [1]
+SysTick_Handler          0x801'05f9    0x6a  Code  Gb  stm32f10x_it.o [1]
+Sys_AdTask               0x800'f109    0x46  Code  Gb  AnyID_SM5001_SysCfg.o [1]
+Sys_CfgClock             0x800'de13    0x76  Code  Gb  AnyID_SM5001_SysCfg.o [1]
+Sys_CfgNVIC              0x800'deb1    0x18  Code  Gb  AnyID_SM5001_SysCfg.o [1]
+Sys_CfgPeriphClk         0x800'de89    0x28  Code  Gb  AnyID_SM5001_SysCfg.o [1]
+Sys_CtrlIOInit           0x800'dec9    0x38  Code  Gb  AnyID_SM5001_SysCfg.o [1]
+Sys_Delayms              0x800'de01    0x12  Code  Gb  AnyID_SM5001_SysCfg.o [1]
+Sys_ElectTask            0x800'e6c9   0x142  Code  Gb  AnyID_SM5001_SysCfg.o [1]
+Sys_GateTask             0x800'e0c1   0x424  Code  Gb  AnyID_SM5001_SysCfg.o [1]
+Sys_HeratTask            0x800'f155   0x140  Code  Gb  AnyID_SM5001_SysCfg.o [1]
+Sys_IOTask               0x800'f075    0x8e  Code  Gb  AnyID_SM5001_SysCfg.o [1]
+Sys_IOTask::tempState   0x2000'5f16     0x1  Data  Lc  AnyID_SM5001_SysCfg.o [1]
+Sys_Init                 0x800'df01    0xb8  Code  Gb  AnyID_SM5001_SysCfg.o [1]
+Sys_LedTask              0x800'dfb9   0x108  Code  Gb  AnyID_SM5001_SysCfg.o [1]
+Sys_ServerTask           0x800'eb49   0x21a  Code  Gb  AnyID_SM5001_SysCfg.o [1]
+Sys_SoundTask            0x800'e4e5   0x1e4  Code  Gb  AnyID_SM5001_SysCfg.o [1]
+Sys_SoundTask{16}{17}::sampleTick
+                        0x2000'5f14     0x1  Data  Lc  AnyID_SM5001_SysCfg.o [1]
+Sys_TestTask             0x800'f2bd   0x1ee  Code  Gb  AnyID_SM5001_SysCfg.o [1]
+Sys_W232Task             0x800'e815   0x302  Code  Gb  AnyID_SM5001_SysCfg.o [1]
+Sys_WaterTask            0x800'ed91   0x2e0  Code  Gb  AnyID_SM5001_SysCfg.o [1]
+Sys_WaterTask::rfidTime
+                        0x2000'5f15     0x1  Data  Lc  AnyID_SM5001_SysCfg.o [1]
+SystemInit               0x801'0a11    0x3c  Code  Gb  system_stm32f10x.o [1]
+UART4_IRQHandler         0x801'0897    0x3c  Code  Gb  stm32f10x_it.o [1]
+UART5_IRQHandler         0x801'07db    0x5c  Code  Gb  stm32f10x_it.o [1]
+USART1_IRQHandler        0x801'0663    0x36  Code  Gb  stm32f10x_it.o [1]
+USART2_IRQHandler        0x801'06c3    0x3c  Code  Gb  stm32f10x_it.o [1]
+USART3_IRQHandler        0x801'073f    0x3c  Code  Gb  stm32f10x_it.o [1]
+USART_ClearFlag          0x800'b927    0x10  Code  Gb  stm32f10x_usart.o [1]
+USART_ClearITPendingBit
+                         0x800'b9a1    0x26  Code  Gb  stm32f10x_usart.o [1]
+USART_Cmd                0x800'b865    0x1e  Code  Gb  stm32f10x_usart.o [1]
+USART_DMACmd             0x800'b8f3    0x18  Code  Gb  stm32f10x_usart.o [1]
+USART_DeInit             0x800'b6e9    0x90  Code  Gb  stm32f10x_usart.o [1]
+USART_GetFlagStatus      0x800'b90b    0x1c  Code  Gb  stm32f10x_usart.o [1]
+USART_GetITStatus        0x800'b937    0x6a  Code  Gb  stm32f10x_usart.o [1]
+USART_ITConfig           0x800'b883    0x70  Code  Gb  stm32f10x_usart.o [1]
+USART_Init               0x800'b779    0xd6  Code  Gb  stm32f10x_usart.o [1]
+UsageFault_Handler       0x801'05f1     0x2  Code  Gb  stm32f10x_it.o [1]
+W232_ConfigInt           0x800'ae69    0x22  Code  Gb  AnyID_SM5001_W232_HL.o [1]
+W232_ConnectCheckClose   0x800'9847    0x28  Code  Gb  AnyID_SM5001_W232.o [1]
+W232_ConnectCheckRsp     0x800'9511   0x29a  Code  Gb  AnyID_SM5001_W232.o [1]
+W232_ConnectGetCClk      0x800'987d   0x224  Code  Gb  AnyID_SM5001_W232.o [1]
+W232_ConnectInit         0x800'8df5   0x42e  Code  Gb  AnyID_SM5001_W232.o [1]
+W232_ConnectStep         0x800'97ab    0x9c  Code  Gb  AnyID_SM5001_W232.o [1]
+W232_ConnectTxCmd        0x800'9223   0x2e8  Code  Gb  AnyID_SM5001_W232.o [1]
+W232_DataHandle          0x800'9aa1   0x192  Code  Gb  AnyID_SM5001_W232.o [1]
+W232_Delayms             0x800'aecd    0x12  Code  Gb  AnyID_SM5001_W232_HL.o [1]
+W232_EnableInt           0x800'ae8b    0x30  Code  Gb  AnyID_SM5001_W232_HL.o [1]
+W232_Init                0x800'8ddd    0x18  Code  Gb  AnyID_SM5001_W232.o [1]
+W232_InitInterface       0x800'ada5    0xc4  Code  Gb  AnyID_SM5001_W232_HL.o [1]
+W232_PORT_CTRL           0x801'1614     0x8  Data  Gb  AnyID_SM5001_W232_HL.o [1]
+W232_PORT_KEY            0x801'160c     0x8  Data  Gb  AnyID_SM5001_W232_HL.o [1]
+W232_PORT_RX             0x801'1604     0x8  Data  Gb  AnyID_SM5001_W232_HL.o [1]
+W232_PORT_TX             0x801'15fc     0x8  Data  Gb  AnyID_SM5001_W232_HL.o [1]
+W232_WriteBuffer         0x800'aedf    0x2c  Code  Gb  AnyID_SM5001_W232_HL.o [1]
+W232_WriteByte           0x800'aebb    0x12  Code  Gb  AnyID_SM5001_W232_HL.o [1]
+W232_WriteCmd            0x800'af25    0x22  Code  Gb  AnyID_SM5001_W232_HL.o [1]
+WATER_PORT_CTRL          0x801'162c     0x8  Data  Gb  Anyid_SM5001_Water_HL.o [1]
+WATER_PORT_RX            0x801'1624     0x8  Data  Gb  Anyid_SM5001_Water_HL.o [1]
+WATER_PORT_TX            0x801'161c     0x8  Data  Gb  Anyid_SM5001_Water_HL.o [1]
+Water_ConfigInt          0x801'0215    0x2e  Code  Gb  Anyid_SM5001_Water_HL.o [1]
+Water_FormatFarme        0x800'f657    0xf2  Code  Gb  Anyid_SM5001_Water.o [1]
+Water_Init               0x800'f60d    0x4a  Code  Gb  Anyid_SM5001_Water.o [1]
+Water_InitInterface      0x801'014d    0xc8  Code  Gb  Anyid_SM5001_Water_HL.o [1]
+Water_InitRxDma          0x801'02e1    0x96  Code  Gb  Anyid_SM5001_Water_HL.o [1]
+Water_InitTxDma          0x801'0243    0x9e  Code  Gb  Anyid_SM5001_Water_HL.o [1]
+Water_TransmitCmd        0x800'f749    0xae  Code  Gb  Anyid_SM5001_Water.o [1]
+Win_CalAvg               0x800'ffe9    0x4e  Code  Gb  AnyID_SM5001_AD.o [1]
+_Encoding_8859_1_Mbrlen
+                         0x800'417d     0x2  Code  Gb  xencoding_8859_1.o [2]
+_Encoding_8859_1_Wctomb
+                         0x800'416b    0x12  Code  Gb  xencoding_8859_1.o [2]
+_LitobFull               0x800'c8db   0x10a  Code  Lc  xprintffull.o [2]
+_Locale_lconv           0x2000'002c    0x38  Data  Lc  xlocale_c.o [2]
+_PrintfFull              0x800'b9c9   0xcc4  Code  Gb  xprintffull.o [2]
+_PutcharsFull            0x800'ca4d    0x2e  Code  Lc  xprintffull.o [2]
+_PutstrFull              0x800'c81b    0xc0  Code  Lc  xprintffull.o [2]
+_PuttxtFull              0x800'c70f   0x10c  Code  Lc  xprintffull.o [2]
+_SProut                  0x800'4189     0xa  Code  Gb  xsprout.o [2]
+__ICFEDIT_region_RAM_end__ {Abs}
+                        0x2000'bfff          Data  Gb  <internal module>
+__ICFEDIT_region_RAM_start__ {Abs}
+                        0x2000'0000          Data  Gb  <internal module>
+__NVIC_SetPriority       0x800'fcad    0x2c  Code  Lc  AnyID_SM5001_SysTick_HL.o [1]
+__aeabi_cdcmple          0x800'd32d          Code  Gb  DblCmpLe.o [3]
+__aeabi_cdrcmple         0x800'd35d          Code  Gb  DblCmpGe.o [3]
+__aeabi_d2iz             0x800'd4c9          Code  Gb  DblToS32.o [3]
+__aeabi_d2uiz            0x800'd855          Code  Gb  DblToU32.o [3]
+__aeabi_ddiv             0x800'd60d          Code  Gb  DblDiv.o [3]
+__aeabi_dmul             0x800'd899          Code  Gb  DblMul.o [3]
+__aeabi_dsub             0x800'd529          Code  Gb  DblSub.o [3]
+__aeabi_i2d              0x800'd505          Code  Gb  S32ToDbl.o [3]
+__aeabi_ldiv0            0x800'dde9          Code  Gb  I64DivZer.o [4]
+__aeabi_memcpy           0x800'a5ad          Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy4          0x800'a5cd          Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy8          0x800'a5cd          Code  Gb  ABImemcpy.o [4]
+__aeabi_memset           0x800'a409          Code  Gb  ABImemset.o [4]
+__aeabi_ui2d             0x800'd87d          Code  Gb  U32ToDbl.o [3]
+__aeabi_uldivmod         0x800'da45          Code  Gb  I64DivMod.o [4]
+__cmain                  0x801'12f1          Code  Gb  cmain.o [4]
+__exit                   0x800'dded    0x14  Code  Gb  exit.o [5]
+__iar_Fail_s             0x800'd225    0x1c  Code  Gb  xfail_s.o [2]
+__iar_Mbcurmax           0x800'da3b     0xa  Code  Gb  xmbcurmax.o [2]
+__iar_Memchr             0x800'd265          Code  Gb  memchr.o [4]
+__iar_Memset             0x800'a409          Code  Gb  ABImemset.o [4]
+__iar_Memset_word        0x800'a411          Code  Gb  ABImemset.o [4]
+__iar_Strchr             0x800'ca91          Code  Gb  strchr.o [4]
+__iar_dadd               0x800'd539          Code  Gb  DblSub.o [3]
+__iar_data_init3         0x801'1225    0x28  Code  Gb  data_init.o [4]
+__iar_dsub               0x800'dc7d          Code  Gb  DblAdd.o [3]
+__iar_dsubStart          0x800'dc8f          Code  Gb  DblAdd.o [3]
+__iar_frexp              0x800'd2c9          Code  Gb  frexp.o [3]
+__iar_frexp64            0x800'd2bd          Code  Gb  frexp.o [3]
+__iar_frexpl             0x800'd2c9          Code  Gb  frexp.o [3]
+__iar_globLocale        0x2000'0064    0x48  Data  Lc  xlocale_c.o [2]
+__iar_global_Locale      0x800'd1a9     0x4  Code  Gb  xlocale_c.o [2]
+__iar_ldexp64            0x800'd38d          Code  Gb  ldexp.o [3]
+__iar_lz77_init_single3
+                         0x801'0cfd    0x78  Code  Gb  lz77_init_single.o [4]
+__iar_program_start      0x801'14c1          Code  Gb  cstartup_M.o [4]
+__iar_scalbln64          0x800'd38d          Code  Gb  ldexp.o [3]
+__iar_scalbn64           0x800'd38d          Code  Gb  ldexp.o [3]
+__iar_zero_init3         0x800'4131    0x3a  Code  Gb  zero_init3.o [4]
+__low_level_init         0x801'130f     0x4  Code  Gb  low_level_init.o [2]
+__vector_table           0x800'4000          Data  Gb  startup_stm32f10x_hd.o [1]
+_call_main               0x801'12fd          Code  Gb  cmain.o [4]
+_exit                    0x801'1319          Code  Gb  cexit.o [4]
+_gLocale_mblen           0x800'd211     0x4  Code  Gb  xlocale_c.o [2]
+_gLocale_mblenInt        0x800'd1d5    0x2c  Code  Gb  xlocale_c.o [2]
+_gLocale_wctomb          0x800'd215     0x4  Code  Gb  xlocale_c.o [2]
+_gLocale_wctombInt       0x800'd20d     0x4  Code  Gb  xlocale_c.o [2]
+_main                    0x801'130b          Code  Gb  cmain.o [4]
+a_GetCrc                 0x800'a129    0x48  Code  Gb  AnyID_Stdlib.o [1]
+a_Hex2Str                0x800'a1d7    0x54  Code  Gb  AnyID_Stdlib.o [1]
+a_IndexOf                0x800'a3d5    0x32  Code  Gb  AnyID_Stdlib.o [1]
+a_Str2Hex                0x800'a171    0x66  Code  Gb  AnyID_Stdlib.o [1]
+a_atoi                   0x800'a235   0x1a0  Code  Gb  AnyID_Stdlib.o [1]
+abort                    0x800'dc75     0x6  Code  Gb  abort.o [2]
+exit                     0x801'1313     0x4  Code  Gb  exit.o [2]
+frexp                    0x800'd2bd          Code  Gb  frexp.o [3]
+frexpl                   0x800'd2bd          Code  Gb  frexp.o [3]
+g_aADTmprBuf             0x801'0c20    0xdc  Data  Gb  AnyID_SM5001_AD.o [1]
+g_aAdBuffer             0x2000'5ef0     0x4  Data  Gb  AnyID_SM5001_AD_HL.o [1]
+g_aAsicto                0x801'0b20   0x100  Data  Gb  AnyID_Stdlib.o [1]
+g_aGateSlvInfo          0x2000'3db8   0x780  Data  Gb  AnyID_SM5001_Gate.o [1]
+g_aGateSlvStat          0x2000'5e80    0x24  Data  Gb  AnyID_SM5001_Gate.o [1]
+g_aGprsServerInfo       0x2000'5dac    0x60  Data  Gb  AnyID_SM5001_W232.o [1]
+g_aHextoAsic             0x801'1440    0x10  Data  Gb  AnyID_Stdlib.o [1]
+g_aMqttAtBuf            0x2000'2db8   0x800  Data  Gb  AnyID_SM5001_Device.o [1]
+g_aMqttBuf              0x2000'35b8   0x800  Data  Gb  AnyID_SM5001_Device.o [1]
+g_aStrBuffJsonAccept    0x2000'4fec   0x200  Data  Gb  AnyID_SM5001_Device.o [1]
+g_aStrBuffJsonReject    0x2000'51ec   0x200  Data  Gb  AnyID_SM5001_Device.o [1]
+g_aStrBuffRequst        0x2000'4dec   0x200  Data  Gb  AnyID_SM5001_Device.o [1]
+g_aStrBuffcmdAccept     0x2000'53ec   0x200  Data  Gb  AnyID_SM5001_Device.o [1]
+g_aStrBuffcmdOta        0x2000'55ec   0x200  Data  Gb  AnyID_SM5001_Device.o [1]
+g_nBatOpenFlag          0x2000'00ac     0x1  Data  Gb  AnyID_SM5001_Device.o [1]
+g_nBratIngTick          0x2000'5ef4     0x4  Data  Gb  AnyID_SM5001_Device.o [1]
+g_nElectDr              0x2000'5f0a     0x2  Data  Gb  stm32f10x_it.o [1]
+g_nElectSr              0x2000'5f08     0x2  Data  Gb  stm32f10x_it.o [1]
+g_nGateDr               0x2000'5f12     0x2  Data  Gb  stm32f10x_it.o [1]
+g_nGateSr               0x2000'5f10     0x2  Data  Gb  stm32f10x_it.o [1]
+g_nImei                 0x2000'5ec0    0x14  Data  Gb  AnyID_SM5001_W232.o [1]
+g_nImsiStr              0x2000'5ed4    0x14  Data  Gb  AnyID_SM5001_W232.o [1]
+g_nLedDelayTime         0x2000'5ef8     0x4  Data  Gb  AnyID_SM5001_SysCfg.o [1]
+g_nSysDelay             0x2000'5f00     0x4  Data  Gb  AnyID_SM5001_SysTick_HL.o [1]
+g_nSysState             0x2000'000c     0x4  Data  Gb  AnyID_SM5001_SysCfg.o [1]
+g_nSysTick              0x2000'5efc     0x4  Data  Gb  AnyID_SM5001_SysTick_HL.o [1]
+g_nW232RxByte           0x2000'5f17     0x1  Data  Gb  stm32f10x_it.o [1]
+g_nWaterDr              0x2000'5f0e     0x2  Data  Gb  stm32f10x_it.o [1]
+g_nWaterGetUidBuffer    0x2000'0010     0x8  Data  Gb  Anyid_SM5001_Water.o [1]
+g_nWaterSr              0x2000'5f0c     0x2  Data  Gb  stm32f10x_it.o [1]
+g_sDeviceImpRspInfo     0x2000'5d48    0x64  Data  Gb  AnyID_SM5001_Device.o [1]
+g_sDeviceParams         0x2000'5930   0x134  Data  Gb  AnyID_SM5001_Device.o [1]
+g_sDeviceRspFrame       0x2000'00b0  0x1430  Data  Gb  AnyID_SM5001_Device.o [1]
+g_sDeviceServerTxBuf    0x2000'14e0   0x8a8  Data  Gb  AnyID_SM5001_Device.o [1]
+g_sDeviceTestInfo       0x2000'5ee8     0x8  Data  Gb  AnyID_SM5001_Device.o [1]
+g_sElectInfo            0x2000'4bb8   0x234  Data  Gb  Anyid_SM5001_ELECT.o [1]
+g_sFramBootParamenter   0x2000'5e48    0x38  Data  Gb  AnyID_SM5001_FRam.o [1]
+g_sGateOpInfo           0x2000'48c4   0x2f4  Data  Gb  AnyID_SM5001_Gate.o [1]
+g_sIoInfo               0x2000'5ea4    0x1c  Data  Gb  AnyID_SM5001_IO.o [1]
+g_sMqttKey              0x2000'5c94    0xb4  Data  Gb  AnyID_SM5001_FRam.o [1]
+g_sRtcTime              0x2000'0000     0xc  Data  Gb  AnyID_SM5001_RTC.o [1]
+g_sSoundInfo            0x2000'57ec   0x144  Data  Gb  Anyid_SM5001_Sound.o [1]
+g_sUartRcvFrame         0x2000'25a0   0x818  Data  Gb  AnyID_Uart_Receive.o [1]
+g_sW232Connect          0x2000'4538   0x38c  Data  Gb  AnyID_SM5001_W232.o [1]
+g_sW232RcvBuffer        0x2000'5a64   0x124  Data  Gb  AnyID_SM5001_W232.o [1]
+g_sW232RcvFrame         0x2000'1d88   0x818  Data  Gb  AnyID_SM5001_W232.o [1]
+g_sWaterInfo            0x2000'5b88   0x10c  Data  Gb  Anyid_SM5001_Water.o [1]
+g_sWaterTempRcv         0x2000'5e0c    0x3c  Data  Gb  Anyid_SM5001_Water.o [1]
+ldexp                    0x800'd38d          Code  Gb  ldexp.o [3]
+ldexpl                   0x800'd38d          Code  Gb  ldexp.o [3]
+localeconv               0x800'd219     0x4  Code  Gb  xlocale_c.o [2]
+main                     0x801'113d    0x34  Code  Gb  main.o [1]
+memchr                   0x800'd265          Code  Gb  memchr.o [4]
+memcmp                   0x800'a655          Code  Gb  memcmp.o [4]
+scalbln                  0x800'd38d          Code  Gb  ldexp.o [3]
+scalblnl                 0x800'd38d          Code  Gb  ldexp.o [3]
+scalbn                   0x800'd38d          Code  Gb  ldexp.o [3]
+scalbnl                  0x800'd38d          Code  Gb  ldexp.o [3]
+scale                    0x800'c9e5    0x46  Code  Lc  xprintffull.o [2]
+sec_hand                0x2000'5f04     0x4  Data  Lc  xfail_s.o [2]
+sprintf                  0x800'ad39    0x40  Code  Gb  sprintf.o [2]
+strchr                   0x800'ca91          Code  Gb  strchr.o [4]
+strlen                   0x800'ad01          Code  Gb  strlen.o [4]
+strstr                   0x800'ad79    0x2c  Code  Gb  strstr.o [2]
+
+
+[1] = E:\AnyID\HFReader\software\SM500101\SM5001\Build\Obj
+[2] = dl7M_tlf.a
+[3] = m7M_tl.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  48'727 bytes of readonly  code memory
+   2'629 bytes of readonly  data memory (+ 50 absolute)
+  29'718 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
